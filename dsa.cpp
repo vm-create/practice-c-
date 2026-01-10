@@ -183,3 +183,142 @@
 //          << "modulo = " << (a % b) << endl;
 //     return 0;
 // }
+
+// CONDITION AND STATEMENTS VIDEO 3 $$$$$$$$
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int n = -56;
+//     if (n >= 0)
+//     {
+//         cout << "positive" << endl;
+//     }
+//     else
+//     {
+//         cout << " negative " << endl;
+//     }
+
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int age;
+//     cout << "enter age = ";
+//     cin >> age;
+//     if (age >= 18)
+//     {
+//         cout << "person caan vote" << endl;
+//     }
+//     else
+//     {
+//         cout << "person cannot vote" << endl;
+//     }
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int n;
+//     cout << " enter the  number =";
+//     cin >> n;
+//     if (n % 2 == 0)
+//     {
+//         cout << "then number is even" << endl;
+//     }
+//     else
+//     {
+//         cout << "number is odd" << endl;
+//     }
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int marks;
+//     cout << "enter marks ";
+//     cin >> marks;
+
+//     if (marks >= 90)
+//     {
+//         cout << "the grade is A" << endl;
+//     }
+//     else if (marks >= 80 && marks < 90)
+//     {
+//         cout << "the grade is B" << endl;
+//     }
+//     else if (marks >= 70 && marks < 80)
+//     {
+//         cout << "the grade is C" << endl;
+//     }
+//     else if (marks >= 60 && marks < 70)
+//     {
+//         cout << "the grade is D" << endl;
+//     }
+//     else if (marks >= 50 && marks < 60)
+//     {
+//         cout << "the grade is E" << endl;
+//     }
+//     else
+//     {
+//         cout << "the garde is F" << endl;
+//     }
+
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     char c;
+//     cout << "enter the character" << endl;
+//     cin >> c;
+
+//     if (c >= 'a' && c <= 'z')
+//     {
+//         cout << " the characteer is smallcase" << endl;
+//     }
+//     else if (c >= 'A' && c <= 'Z')
+//     {
+//         cout << "the character is upperrcase" << endl;
+//     }
+//     else
+//     {
+//         cout << "you have not entered a letter" << endl;
+//     }
+
+//     return 0;
+// }
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    char c;
+    cout << "enter the character" << endl;
+    cin >> c;
+
+    if (c >= 97 && c <= 122) // THE ASCII VALUE  of a is 97 and z is 122
+    {
+        cout << " the characteer is smallcase" << endl;
+    }
+    else if (c >= 65 && c <= 90) // the ascii value of A IS 65 AND Z IS 90
+    {
+        cout << "the character is upperrcase" << endl;
+    }
+    else
+    {
+        cout << "you have not entered a letter" << endl;
+    }
+
+    return 0;
+}
