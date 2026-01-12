@@ -299,26 +299,271 @@
 //     return 0;
 // }
 
-#include <iostream>
-using namespace std;
-int main()
-{
-    char c;
-    cout << "enter the character" << endl;
-    cin >> c;
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     char c;
+//     cout << "enter the character" << endl;
+//     cin >> c;
 
-    if (c >= 97 && c <= 122) // THE ASCII VALUE  of a is 97 and z is 122
-    {
-        cout << " the characteer is smallcase" << endl;
-    }
-    else if (c >= 65 && c <= 90) // the ascii value of A IS 65 AND Z IS 90
-    {
-        cout << "the character is upperrcase" << endl;
-    }
-    else
-    {
-        cout << "you have not entered a letter" << endl;
-    }
+//     if (c >= 97 && c <= 122) // THE ASCII VALUE  of a is 97 and z is 122
+//     {
+//         cout << " the characteer is smallcase" << endl;
+//     }
+//     else if (c >= 65 && c <= 90) // the ascii value of A IS 65 AND Z IS 90
+//     {
+//         cout << "the character is upperrcase" << endl;
+//     }
+//     else
+//     {
+//         cout << "you have not entered a letter" << endl;
+//     }
 
-    return 0;
-}
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int n = -2;
+//     cout << (n >= 0 ? "positive" : "negative") << endl;
+//     return 0;
+// }
+
+// LOOPS
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int n = 20;
+//     int count = 1;
+//     while (count <= n)
+//     {
+//         cout << count << " ";
+//         count++;
+//     }
+
+//     cout << endl;
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int n = 30;
+//     for (int i = 1; i <= n; i++)
+//     {
+//         cout << i << " ";
+//     }
+//     cout << endl;
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int sum = 0;
+//     int n;
+//     cout << "enter the number =";
+//     cin >> n;
+
+//     for (int i = 1; i <= n; i++)
+//     {
+//         sum = sum + i;
+//     }
+
+//     cout << sum << endl;
+//     return 0;
+// }
+
+//
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//    int sum = 0;
+//    int i = 0;
+
+//    int n;
+//    cout << "enter the number = ";
+//    cin >> n;
+
+//    while (i <= n)
+//    {
+//        if (i == 5)
+//        {
+//            break;
+//        }
+//        sum = sum + i;
+//        i++;
+//    }
+
+//    cout << sum << endl;
+//    return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+
+//     int n;
+//     cout << "enter the number = ";
+//     cin >> n;
+
+//     int sum = 0;
+//     int i = 1;
+//     cout << "the odd numbers are = ";
+
+//     while (i <= n)
+//     {
+//         if (i % 2 != 0)
+//         {
+//             cout << i << " ";
+
+//             sum = sum + i;
+//         }
+//         i++;
+//     }
+//     cout << endl;
+//     cout << "the sum = " << sum << endl;
+
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int sum = 0;
+
+//     int n;
+//     cout << "enter the number = ";
+//     cin >> n;
+
+//     cout << "the odd number are = ";
+
+//     for (int i = 1; i <= n; i++)
+//     {
+//         if (i % 2 != 0)
+//         {
+//             cout << i << " ";
+//             sum = sum + i;
+//         }
+//     }
+//     cout << endl;
+//     cout << "the sum of odd num = " << sum << endl;
+
+//     return 0;
+// }
+
+//
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//    do
+//    {
+//        cout << "hello world ";
+//    } while (3 > 5);
+//    return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int i = 1;
+//     int n = 4;
+//     do
+//     {
+//         cout << i << " ";
+//         i++;
+//     } while (i <= n);
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     bool isPrime = true;
+
+//     int n;
+//     cout << "enter number";
+//     cin >> n;
+
+//     for (int i = 2; i <= n - 1; i++)
+//     {
+//         if (n % i == 0)
+//         {
+//             isPrime = false;
+//             break;
+//         }
+//     }
+//     if (isPrime == true)
+//     {
+//         cout << "the number is prime" << endl;
+//     }
+//     else
+//     {
+//         cout << "the number is not prime" << endl;
+//     }
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     bool isPrime = true;
+
+//     int n;
+//     cout << "enter number";
+//     cin >> n;
+
+//     for (int i = 2; i * i <= n; i++)
+//     {
+//         if (n % i == 0)
+//         {
+//             isPrime = false;
+//             break;
+//         }
+//     }
+//     if (isPrime == true)
+//     {
+//         cout << "the number is prime" << endl;
+//     }
+//     else
+//     {
+//         cout << "the number is not prime" << endl;
+//     }
+//     return 0;
+// }
+
+// nested loops $$$
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int n = 5;
+
+//     for (int i = 1; i <= n; i++)
+//     {
+//         int m = 3;
+//         for (int j = 1; j <= m; j++)
+//         {
+//             cout << '*';
+//         }
+//         cout << endl;
+//     }
+//     return 0;
+// }
