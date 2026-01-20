@@ -567,3 +567,251 @@
 //     }
 //     return 0;
 // }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int n = 4;
+
+//     for (int i = 0; i <= n - 1; i++) // outer loop
+//     {
+
+//         for (int j = 0; j <= n - 1; j++) // inner loop
+//         {
+//             cout << '*' << " ";
+//         }
+//         cout << endl;
+//     }
+
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int n = 4;
+//     char ch = 'A';
+
+//     for (int i = 0; i <= n - 1; i++) // outer loop
+//     {
+
+//         for (int j = 0; j <= n - 1; j++) // inner loop
+//         {
+//             cout << ch << " ";
+//             ch = ch + 1; // 65+1 = 66->B
+//         }
+//         cout << endl;
+//     }
+
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int n = 4;
+
+//     for (int i = 0; i <= n - 1; i++) // outer loop
+//     {
+//         char ch = 'A';
+
+//         for (int j = 0; j <= n - 1; j++) // inner loop
+//         {
+//             cout << ch << " ";
+//             ch = ch + 1; // 65+1 = 66->B
+//         }
+//         cout << endl;
+//     }
+
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int n = 3;
+//     int x = 1;
+
+//     for (int i = 0; i <= n - 1; i++) // outer loop
+//     {
+
+//         for (int j = 0; j <= n - 1; j++) // inner loop
+//         {
+//             cout << x << " ";
+//             x = x + 1;
+//         }
+//         cout << endl;
+//     }
+
+//     cout << "after pattern x =" << x << endl;
+
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int n = 6;
+
+//     for (int i = 0; i <= n - 1; i++) // outer loop
+//     {
+
+//         for (int j = 0; j < i + 1; j++) // inner loop
+//         {
+//             cout << '*' << " ";
+//         }
+//         cout << endl;
+//     }
+
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int n = 6;
+//     int x = 1;
+
+//     for (int i = 0; i <= n - 1; i++) // outer loop
+//     {
+
+//         for (int j = 0; j < i + 1; j++) // inner loop
+//         {
+//             cout << x << " ";
+//         }
+//         cout << endl;
+//         x = x + 1;
+//     }
+
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int n = 5;
+//     char ch = 'A';
+
+//     for (int i = 0; i < n; i++)
+//     {
+//         for (int j = 0; j < i + 1; j++)
+//         {
+//             cout << ch << " ";
+//         }
+//         ch = ch + 1;
+//         cout << endl;
+//     }
+
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int n = 4;
+
+//     for (int i = 0; i < n; i++)
+//     {
+//         int x = 1;
+//         for (int j = 0; j < i + 1; j++)
+//         {
+//             cout << x << " ";
+//             x += 1;
+//         }
+//         cout << endl;
+//     }
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int n = 5;
+//     for (int i = n; i > 0; i--)
+//     {
+//         cout << i << endl;
+//     }
+
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int n = 5;
+//     for (int i = 0; i < n; i++)
+//     {
+//         for (int j = i + 1; j > 0; j--)
+//         {
+//             cout << j << " ";
+//         }
+//         cout << endl;
+//     }
+
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int n = 4;
+//     int num = 1;
+//     for (int i = 0; i < n; i++)
+//     {
+//         for (int j = 0; j < i + 1; j++)
+//         {
+//             cout << num << " ";
+//             num = num + 1;
+//         }
+//         cout << endl;
+//     }
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int n = 4;
+//     char ch = 'A';
+//     for (int i = 0; i < n; i++)
+//     {
+//         for (int j = 0; j < i + 1; j++)
+//         {
+//             cout << ch << " ";
+//             ch = ch + 1;
+//         }
+//         cout << endl;
+//     }
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int n = 4;
+
+//     for (int i = 0; i < n; i++)
+//     {
+
+//         for (int j = i + 1; j > 0; j--)
+//         {
+//             char ch = (char)('A' + j - 1);
+//             cout << ch << " ";
+//         }
+//         cout << endl;
+//     }
+//     return 0;
+// }
