@@ -815,3 +815,130 @@
 //     }
 //     return 0;
 // }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int n = 4;
+
+//     for (int i = 0; i < n; i++)
+//     {
+//         for (int j = 0; j < i; j++)
+//         {
+//             cout << " ";
+//         }
+//         for (int j = 0; j < n - i; j++)
+//         {
+//             cout << (i + 1);
+//         }
+//         cout << endl;
+//     }
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int n = 4;
+//     char ch = 'A';
+
+//     for (int i = 0; i < n; i++)
+//     {
+//         for (int j = 0; j < i; j++)
+//         {
+//             cout << " ";
+//         }
+//         for (int j = 0; j < n - i; j++)
+//         {
+//             cout << ch;
+//         }
+//         ch = ch + 1;
+//         cout << endl;
+//     }
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int n = 4;
+//     for (int i = 0; i < n; i++)
+//     {
+//         int num = 1;
+
+//         for (int j = n - (i + 1); j > 0; j--)
+//         {
+//             cout << " ";
+//         }
+//         for (int k = 0; k < i + 1; k++)
+//         {
+//             cout << num;
+//             num = num + 1;
+//         }
+//         for (int l = i; l > 0; l--)
+//         {
+//             cout << i;
+//         }
+
+//         cout << endl;
+//     }
+
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int n = 4;
+//     for (int i = 0; i < n; i++)
+//     {
+//         // top
+
+//         for (int j = n - (i + 1); j > 0; j--)
+//         {
+//             // spaces
+//             cout << " ";
+//         }
+
+//         cout << '*';
+
+//         if (i != 0)
+//         {
+//             for (int k = 0; k < 2 * i - 1; k++)
+//             {
+//                 // spaces
+//                 cout << " ";
+//             }
+
+//             cout << '*';
+//         }
+//         cout << endl;
+//     }
+
+//     for (int i = 0; i < n - 1; i++)
+//     {
+
+//         for (int j = 0; j < i + 1; j++)
+//         {
+//             cout << " ";
+//         }
+
+//         cout << '*';
+
+//         if (i != n - 2)
+//         {
+//             for (int k = 2 * (n - 2 - i) - 1; k > 0; k--)
+//             {
+//                 cout << " ";
+//             }
+//             cout << '*';
+//         }
+//         cout << endl;
+//     }
+
+//     return 0;
+// }
