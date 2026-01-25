@@ -942,3 +942,233 @@
 
 //     return 0;
 // }
+
+// #include <iostream>
+// using namespace std;
+
+// // function definition
+// void printHello()
+// {
+//     cout << "hello\n";
+// }
+
+// int main()
+// {
+//     // function call
+//     printHello();
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// // function definition
+// int printHello()
+// {
+//     cout << "hello\n";
+//     return 3;
+// }
+
+// int main()
+// {
+//     // function call
+//     int val = printHello();
+//     cout << "value of val : " << val << endl;
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// // function definition
+// int printHello()
+// {
+//     cout << "hello\n";
+//     return 3;
+// }
+
+// int main()
+// {
+//     // function call
+//     cout << printHello() << endl;
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// // sum of 2 numbers
+// int sum(int a, int b)
+// {
+//     int s = a + b;
+//     return s;
+// }
+
+// int main()
+// {
+//     cout << sum(10, 5) << endl;
+
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// // minimum of 2 numbers
+// int minOf2numbers(int a, int b) // parameters
+// {
+//     if (a > b)
+//     {
+//         return b;
+//     }
+//     else
+//     {
+//         return a;
+//     }
+// }
+
+// int main()
+// {
+//     cout << "the minimum is " << minOf2numbers(5, 10) << endl; //  arguments
+
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// // calculate sum of numbers from 1 to N
+// int sumofN(int n)
+// {
+//     int sum = 0;
+//     for (int i = 1; i <= n; i++)
+//     {
+//         sum = sum + i;
+//     }
+//     return sum;
+// }
+
+// int main()
+// {
+
+//     cout << "the sum of n numbers = " << sumofN(3) << endl;
+
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// // calculate sum of numbers from 1 to N
+// int sumofN(int n)
+// {
+//     int sum = 0;
+//     for (int i = 1; i <= n; i++)
+//     {
+//         sum = sum + i;
+//     }
+//     return sum;
+// }
+
+// int main()
+// {
+
+//     cout << "the sum of n numbers = " << sumofN(3) << endl;
+
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// // calculate sum of numbers from 1 to N
+// int factorial(int n)
+// {
+//     int prod = 1;
+//     for (int i = 1; i <= n; i++)
+//     {
+//         prod = prod * i;
+//     }
+//     return prod;
+// }
+
+// int main()
+// {
+
+//     cout << "the factorial of n  = " << factorial(5) << endl;
+
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// void fun(int x)
+// {
+//     x = 2 * x;
+//     cout << " x =" << x << endl;
+// }
+// int main()
+// {
+//     int x = 5;
+//     fun(x);
+//     cout << " x =" << x << endl;
+
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// int fun(int n)
+// {
+//     int sum = 0;
+//     while (n > 0)
+//     {
+//         sum = sum + n % 10;
+//         n = n / 10;
+//     }
+//     return sum;
+// }
+
+// int main()
+// {
+//     int n = 14521;
+
+//     cout << " the sum of digits  =" << fun(n) << endl;
+
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// int fun(int n)
+// {
+//     int fact = 1;
+
+//     for (int i = 1; i <= n; i++)
+//     {
+//         fact = fact * i;
+//     }
+//     return fact;
+// }
+
+// int nCr(int n, int r)
+// {
+//     int fact_n = fun(n);
+//     int fact_r = fun(r);
+//     int fact_nmr = fun(n - r);
+
+//     return fact_n / (fact_r * fact_nmr);
+// }
+
+// int main()
+// {
+//     int n = 8;
+//     int r = 2;
+
+//     cout << " the nCr  =" << nCr(8, 2) << endl;
+
+//     return 0;
+// }
