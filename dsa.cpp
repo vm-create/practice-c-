@@ -1172,3 +1172,56 @@
 
 //     return 0;
 // }
+
+// #include <iostream>
+// using namespace std;
+
+// int decToBinary(int decNum)
+// {
+//     int binNum = 0;
+//     int pow = 1;
+
+//     while (decNum > 0)
+//     {
+//         int rem = decNum % 2;
+//         decNum = decNum / 2;
+//         binNum = binNum + (rem * (pow));
+//         pow = pow * 10;
+//     }
+//     return binNum;
+// }
+// int main()
+// {
+
+//     for (int i = 1; i <= 10; i++)
+//     {
+//         cout << "the binary no of demcimal no " << i << " is " << decToBinary(i) << endl;
+//     }
+//     return 0;
+// }
+
+#include <iostream>
+using namespace std;
+
+int BinaryToDec(int binNum)
+{
+    int decNum = 0;
+    int pow = 1;
+
+    while (binNum > 0)
+    {
+        int rem = binNum % 10;
+        binNum = binNum / 10;
+        decNum += rem * pow;
+        pow = pow * 2;
+    }
+    return decNum;
+}
+int main()
+{
+
+    int binNum = 10110;
+    cout << BinaryToDec(binNum) << endl;
+
+    return 0;
+}
