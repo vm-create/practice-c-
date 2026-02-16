@@ -1200,28 +1200,176 @@
 //     return 0;
 // }
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-int BinaryToDec(int binNum)
-{
-    int decNum = 0;
-    int pow = 1;
+// int BinaryToDec(int binNum)
+// {
+//     int decNum = 0;
+//     int pow = 1;
 
-    while (binNum > 0)
-    {
-        int rem = binNum % 10;
-        binNum = binNum / 10;
-        decNum += rem * pow;
-        pow = pow * 2;
-    }
-    return decNum;
-}
-int main()
-{
+//     while (binNum > 0)
+//     {
+//         int rem = binNum % 10;
+//         binNum = binNum / 10;
+//         decNum += rem * pow;
+//         pow = pow * 2;
+//     }
+//     return decNum;
+// }
+// int main()
+// {
 
-    int binNum = 10110;
-    cout << BinaryToDec(binNum) << endl;
+//     int binNum = 10110;
+//     cout << BinaryToDec(binNum) << endl;
 
-    return 0;
-}
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+
+//     int a = 4, b = 8;
+//     cout << (a & b) << endl;
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+
+//     int a = 4, b = 8;
+//     cout << (a | b) << endl;
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+
+//     int a = 4, b = 8;
+//     cout << (a ^ b) << endl;
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+
+//     int a = 4;
+//     cout << (a << 1) << endl;
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+
+//     int a = 10;
+//     cout << (a >> 1) << endl;
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+//     cout << (4 * 5 % 2) << endl;
+//     cout << (5 % 2 * 4) << endl;
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     if (3 > 1)
+//     {
+//         int x = 2;
+//     }
+//     cout << x << endl;
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     if (3 > 1)
+//     {
+//         int x = 2;
+//     }
+//     else
+//     {
+//         int x = 3;
+//     }
+//     cout << x << endl;
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     for (int i = 0; i < 10; i++)
+//     {
+//         int x = 2;
+//     }
+//     cout << x << endl;
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// void fun()
+// {
+//     int x = 2;
+// }
+
+// int main()
+// {
+//     fun(); // local scope
+//     cout << x << endl;
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// int x = 2; // global scope
+
+// void fun()
+// {
+//     cout << x << endl;
+// }
+
+// int main()
+// {
+//     fun();
+//     cout << x << endl;
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+//     cout << sizeof(int) << endl;
+//     cout << sizeof(long int) << endl;
+
+//     return 0;
+// }
