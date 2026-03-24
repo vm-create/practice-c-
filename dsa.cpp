@@ -1373,3 +1373,224 @@
 
 //     return 0;
 // }
+
+// ARRAY
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int marks[5] = {99, 100, 33, 45, 4};
+//     marks[0] = 1010000;
+//     cout << marks[0] << endl;
+//     cout << marks[1] << endl;
+//     cout << marks[2] << endl;
+//     cout << marks[3] << endl;
+//     cout << marks[4] << endl;
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int marks[5] = {99, 100, 33, 45, 4};
+//     // loops
+
+//     int sz = sizeof(marks) / sizeof(int);
+//     cout << sz << endl;
+//     cout << endl;
+
+//     // size of int =4 as int takes 4 bytes
+//     // size of marks is 20 as there are 5 cells each of int which have 4 bytes in memory
+
+//     for (int i = 0; i < sz; i++)
+//     {
+//         cout << marks[i] << endl;
+//     }
+
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int marks[5];
+//     // loops
+
+//     int sz = sizeof(marks) / sizeof(int);
+//     cout << "enter marks" << endl;
+
+//     for (int i = 0; i < sz; i++)
+//     {
+
+//         cin >> marks[i];
+//     }
+//     cout << "marks are" << endl;
+
+//     for (int i = 0; i < sz; i++)
+//     {
+
+//         cout << marks[i] << endl;
+//     }
+
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+
+//     int marks[5] = {110, 99, -3, 3, 4};
+
+//     int sz = sizeof(marks) / sizeof(int);
+
+//     int smallest = INT_MAX;
+
+//     for (int i = 0; i < sz; i++)
+//     {
+
+//         if (smallest > marks[i])
+//         {
+//             smallest = marks[i];
+//         }
+//     }
+
+//     cout << "the smallest number is " << smallest << endl;
+
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+
+//     int marks[5] = {110, 99, -3, 3, 4};
+
+//     int sz = sizeof(marks) / sizeof(int);
+
+//     int smallest = INT_MAX;
+
+//     for (int i = 0; i < sz; i++)
+//     {
+
+//         smallest = min(marks[i], smallest);
+//     }
+
+//     cout << "the smallest number is " << smallest << endl;
+
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+
+//     int marks[5] = {110, 99, -3, 3, 4};
+
+//     int sz = sizeof(marks) / sizeof(int);
+
+//     int largest = INT_MIN;
+
+//     for (int i = 0; i < sz; i++)
+//     {
+
+//         if (marks[i] > largest)
+//         {
+//             largest = marks[i];
+//         }
+//     }
+
+//     cout << "the largest number is " << largest << endl;
+
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+
+//     int marks[5] = {110, 99, -3, 3, 4};
+
+//     int sz = sizeof(marks) / sizeof(int);
+
+//     int largest = INT_MIN;
+
+//     for (int i = 0; i < sz; i++)
+//     {
+
+//         largest = max(marks[i], largest);
+//     }
+
+//     cout << "the largest number is " << largest << endl;
+
+//     return 0;
+// }
+
+// int searcharr(int arr[], int n)
+// {
+
+//     for (int i = 0; i < n; i++)
+//     {
+//         if (arr[i] == 8)
+//         {
+//             return i;
+//         }
+//     }
+//     return -1;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+
+//     int marks[5] = {110, 99, -3, 2, 4};
+//     int x = searcharr(marks, 5);
+//     if (x == -1)
+//     {
+//         cout << "the array does not have 8 " << endl;
+//     }
+//     else
+//     {
+//         cout << x << endl;
+//     }
+
+//     return 0;
+// }
+
+#include <iostream>
+using namespace std;
+
+void ReverseArr(int arr[], int n)
+{
+    int start = 0;
+    int end = n - 1;
+
+    while (start < end)
+    {
+        swap(arr[start], arr[end]);
+        start++;
+        end--;
+    }
+}
+
+int main()
+{
+
+    int marks[5] = {110, 99, -3, 2, 4};
+    int sz = 5;
+    ReverseArr(marks, sz);
+    for (int i = 0; i < sz; i++)
+    {
+        cout << marks[i] << " ";
+    }
+    cout << endl;
+
+    return 0;
+}
