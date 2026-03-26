@@ -1564,33 +1564,141 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// using namespace std;
+
+// void ReverseArr(int arr[], int n)
+// {
+//     int start = 0;
+//     int end = n - 1;
+
+//     while (start < end)
+//     {
+//         swap(arr[start], arr[end]);
+//         start++;
+//         end--;
+//     }
+// }
+
+// int main()
+// {
+
+//     int marks[5] = {110, 99, -3, 2, 4};
+//     int sz = 5;
+//     ReverseArr(marks, sz);
+//     for (int i = 0; i < sz; i++)
+//     {
+//         cout << marks[i] << " ";
+//     }
+//     cout << endl;
+
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+
+// int main()
+// {
+//     vector<int> vec = {1, 2, 3};
+//     cout << vec[0] << endl;
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+
+// int main()
+// {
+//     vector<int> vec(5, 0);
+//     cout << vec[0] << endl;
+//     cout << vec[1] << endl;
+//     cout << vec[2] << endl;
+//     cout << vec[3] << endl;
+//     cout << vec[4] << endl;
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+
+// int main()
+// {
+//     vector<int> vec(5, 1);
+//     for (int i : vec)
+//     {
+//         cout << i << endl;
+//     }
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+
+// int main()
+// {
+//     vector<char> letter = {'a', 'b', 'c', 'd', 'e'};
+//     for (char val : letter)
+//     {
+//         cout << val << endl;
+//     }
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+
+// int main()
+// {
+//     vector<int> vec;
+
+//     cout << "size = " << vec.size() << endl;
+//     vec.push_back(3);
+//     vec.push_back(100); // pushes value to vector
+//     vec.push_back(23);
+//     vec.push_back(32);
+
+//     cout << "size = " << vec.size() << endl;
+
+//     vec.pop_back(); // deletes the last elemnet, her 32
+
+//     cout << "size = " << vec.size() << endl; // gives size of vector
+
+//     for (int val : vec)
+//     {
+//         cout << val << endl;
+//     }
+
+//     cout << "1st val of vector is " << vec.front() << endl;  // gives 1st value of vector
+//     cout << "last value of vector = " << vec.back() << endl; // gives last value of vector
+//     cout << endl;
+//     cout << vec[1] << endl;    // gives value at index 1
+//     cout << vec.at(1) << endl; // alternate way of getting value at index 1
+
+//     return 0;
+// }
+
 #include <iostream>
+#include <vector>
 using namespace std;
-
-void ReverseArr(int arr[], int n)
-{
-    int start = 0;
-    int end = n - 1;
-
-    while (start < end)
-    {
-        swap(arr[start], arr[end]);
-        start++;
-        end--;
-    }
-}
 
 int main()
 {
+    vector<int> vec;
 
-    int marks[5] = {110, 99, -3, 2, 4};
-    int sz = 5;
-    ReverseArr(marks, sz);
-    for (int i = 0; i < sz; i++)
-    {
-        cout << marks[i] << " ";
-    }
-    cout << endl;
+    vec.push_back(3);
+    vec.push_back(100); // pushes value to vector
+    vec.push_back(23);
+    vec.push_back(7);
+    vec.push_back(9);
+
+    cout << "size = " << vec.size() << endl;
+    cout << "capacity= " << vec.capacity() << endl; // gives capacoty of vector
 
     return 0;
 }
