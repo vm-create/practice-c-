@@ -1683,22 +1683,91 @@
 //     return 0;
 // }
 
-#include <iostream>
-#include <vector>
-using namespace std;
+// #include <iostream>
+// #include <vector>
+// using namespace std;
 
-int main()
-{
-    vector<int> vec;
+// int main()
+// {
+//     vector<int> vec;
 
-    vec.push_back(3);
-    vec.push_back(100); // pushes value to vector
-    vec.push_back(23);
-    vec.push_back(7);
-    vec.push_back(9);
+//     vec.push_back(3);
+//     vec.push_back(100); // pushes value to vector
+//     vec.push_back(23);
+//     vec.push_back(7);
+//     vec.push_back(9);
 
-    cout << "size = " << vec.size() << endl;
-    cout << "capacity= " << vec.capacity() << endl; // gives capacoty of vector
+//     cout << "size = " << vec.size() << endl;
+//     cout << "capacity= " << vec.capacity() << endl; // gives capacoty of vector
 
-    return 0;
-}
+//     return 0;
+// }
+
+// KADANE ALGORITHM VIDEO 10
+
+
+// code for substring 
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+//     int n=5;
+//     int arr[n]={2,-9,15,14,-5};
+//     for(int st=0;st<n;st++){
+//         for(int end=st;end<n;end++){
+//             for(int i=st;i<=end;i++){
+//                 cout<<arr[i];
+//             }
+//             cout<<" ";
+
+
+//         }
+//         cout<<endl;
+//     }
+//     return 0;
+// }
+
+
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+//     int n=5;
+//     int arr[n]={2,-9,15,14,-5};
+//     int max_sum=INT_MIN;
+//     for(int st=0;st<n;st++){
+//         int curr_sum=0;
+//         for(int end=st;end<n;end++){
+//             curr_sum +=arr[end];
+//             max_sum=max(max_sum,curr_sum);
+            
+
+
+//         }
+       
+//     }
+//     cout<<max_sum;
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+//     int n=5;
+//     int arr[n]={2,-9,5,14,-5};
+//     int max_sum=INT_MIN;
+//     int curr_sum=0;
+//     for(int i=0;i<n;i++){
+//         curr_sum +=arr[i];
+//         max_sum=max(max_sum,curr_sum);
+//         if (curr_sum<0){
+//             curr_sum=0;
+//         }
+//     }
+//     cout<<max_sum<<endl;
+//     return 0;
+// }
