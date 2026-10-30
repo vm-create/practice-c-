@@ -2095,74 +2095,138 @@
 
 
 
-#include <iostream>
-using namespace std;
 
-class Node{
-public:
+//            I WAS HERE VIDEO 61
 
-    int data;
-    Node* next;
-    Node(int value){
-        data=value;
-        next=NULL;
+// #include <iostream>
+// using namespace std;
 
-    }
+// class Node{
+// public:
+
+//     int data;
+//     Node* next;
+//     Node(int value){
+//         data=value;
+//         next=NULL;
+
+//     }
     
 
-};
-class List{
-    Node*head;
-    Node*tail;
-public:
-      List(){
-        head=tail=NULL; 
-      }
-      void push_front(int val){
-        Node *newNode= new Node(val);// dynamic 
-        if(head==NULL){
-            head=tail=newNode;
-            return; 
-        }else{
-            newNode->next=head;
-            head=newNode;
-        }
-      }
-      void printLL(){
-        Node*temp=head;
-        while(temp!=NULL){
-            cout << temp -> data << "->";
-            temp=temp -> next;
-        }
-        cout<< "NULL"<<endl;
-      }
+// };
+// class List{
+//     Node*head;
+//     Node*tail;
+// public:
+//       List(){
+//         head=tail=NULL; 
+//       }
+//       void push_front(int val){
+//         Node *newNode= new Node(val);// dynamic 
+//         if(head==NULL){
+//             head=tail=newNode;
+//             return; 
+//         }else{
+//             newNode->next=head;
+//             head=newNode;
+//         }
+//       }
+//       void printLL(){
+//         Node*temp=head;
+//         while(temp!=NULL){
+//             cout << temp -> data << "->";
+//             temp=temp -> next;
+//         }
+//         cout<< "NULL"<<endl;
+//       }
 
-      Node* middle(){
-        Node* slow= head;
-        Node* fast= head;
-        while(fast!=NULL && fast->next!=NULL){
-            slow=slow->next;
-            fast=fast->next->next;
-    }
-      return slow;
-}
+//       Node* middle(){
+//         Node* slow= head;
+//         Node* fast= head;
+//         while(fast!=NULL && fast->next!=NULL){
+//             slow=slow->next;
+//             fast=fast->next->next;
+//     }
+//       return slow;
+// }
 
 
         
         
-    };
-int main(){
-    List ll;
-    ll.push_front(1);
-    ll.push_front(2);
-    ll.push_front(3);
-    ll.push_front(4);
-    ll.push_front(5);
-    ll.printLL();
-    cout<< ll.middle()->data;
+//     };
+// int main(){
+//     List ll;
+//     ll.push_front(1);
+//     ll.push_front(2);
+//     ll.push_front(3);
+//     ll.push_front(4);
+//     ll.push_front(5);
+//     ll.printLL();
+//     cout<< ll.middle()->data;
     
     
     
  
-    return 0;
-}
+//     return 0;
+// }
+
+
+
+// VIDEO 42 RECURSION  REVISION
+
+
+// #include <iostream>
+// using namespace std;
+// void printNUM(int n){
+//     if(n==1){
+//         cout<<1<<endl;
+//         return;
+
+//     }
+
+//     cout<< n<<endl;
+//     printNUM(n-1);
+// }
+// int main(){
+//     printNUM(4);
+//     return 0;
+
+// }
+
+
+// #include <iostream>
+// using namespace std;
+// int factorial(int n){
+//     if(n==0){
+        
+//         return 1;
+
+//     }
+
+//     return n * factorial(n-1);
+// }
+// int main(){
+//     cout<<factorial(5)<<endl;
+//     return 0;
+
+// }
+
+
+// #include <iostream>
+// using namespace std;
+// int factorial(int n){
+//     if(n==0){
+        
+//         return 1;
+
+//     }
+
+//     return n * factorial(n-1);
+// }
+// int main(){
+//     cout<<factorial(5)<<endl;
+//     return 0;
+
+// }
+
+// video 61 finished
