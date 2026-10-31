@@ -2230,3 +2230,133 @@
 // }
 
 // video 61 finished
+
+// video 63 doubly linked list
+
+#include <iostream>
+using namespace std;
+
+class Node{
+public:
+    int data;
+    Node* next;
+    Node* prev;
+
+    Node(int val){
+        
+        data = val;
+        next=NULL;
+        prev=NULL;
+    }
+
+}; 
+
+class DoublyList{
+public:
+
+    Node* head;
+    Node* tail;
+
+    DoublyList(){
+        head=tail=NULL;
+    }
+
+    void push_front(int val){
+        Node* newNode = new Node(val);
+
+        if(head==NULL){
+            head=tail=newNode;
+            return;
+        }
+        else{
+            newNode->next=head;
+            head->prev=newNode;
+            head=newNode;
+        }
+
+    }
+
+    void printDL(){
+        Node* temp=head;
+        if(head==NULL){
+            cout<<head;
+        }
+        else{
+            while(temp!=NULL){
+                cout<<temp->data<<" <=> ";;
+                temp=temp->next;
+            }
+            cout<<"NULL"<<endl;;
+
+        }
+    }
+
+    void push_back(int val){
+        Node* newNode= new Node(val);
+        Node* temp=head;
+
+        if(head==NULL){
+            head=tail=newNode;
+        }
+        else{
+            while(temp->next!=NULL){
+                temp=temp->next;
+            }
+            temp->next=newNode;
+            newNode->prev=temp;
+            tail=newNode;
+
+
+        }
+    }
+
+    void pop_front(){
+        if(head==NULL){
+            cout<<"dl is empty";
+            return;
+        }
+        Node* temp=head;
+        head=head->next;
+        if(head!=NULL){
+        head->prev=NULL; // if head is NULL then its prev cant point to node
+        }
+        temp->next=NULL;
+        delete temp;
+    }
+
+    void pop_back(){
+        if(head==NULL){
+            cout<<"dl is empty";
+            return;
+        }
+        Node* temp=tail;
+        tail=tail->prev;
+        if(tail!=NULL){
+        tail->next=NULL;
+        }
+        temp->prev=NULL;
+        delete temp;
+    }
+
+
+
+};
+
+int main(){
+    DoublyList d1;
+    d1.push_front(1);
+    d1.push_front(12);
+    d1.push_front(23);
+    d1.printDL();
+    d1.push_back(5);
+    d1.push_back(10);
+    d1.printDL();
+    d1.pop_front();
+    d1.printDL();
+    d1.pop_back();
+    d1.printDL();
+
+
+
+    return 0;
+}
