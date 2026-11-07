@@ -2233,129 +2233,522 @@
 
 // video 63 doubly linked list
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-class Node{
-public:
-    int data;
-    Node* next;
-    Node* prev;
+// class Node{
+// public:
+//     int data;
+//     Node* next;
+//     Node* prev;
 
-    Node(int val){
+//     Node(int val){
         
-        data = val;
-        next=NULL;
-        prev=NULL;
-    }
+//         data = val;
+//         next=NULL;
+//         prev=NULL;
+//     }
 
-}; 
+// }; 
 
-class DoublyList{
-public:
+// class DoublyList{
+// public:
 
-    Node* head;
-    Node* tail;
+//     Node* head;
+//     Node* tail;
 
-    DoublyList(){
-        head=tail=NULL;
-    }
+//     DoublyList(){
+//         head=tail=NULL;
+//     }
 
-    void push_front(int val){
-        Node* newNode = new Node(val);
+//     void push_front(int val){
+//         Node* newNode = new Node(val);
 
-        if(head==NULL){
-            head=tail=newNode;
-            return;
-        }
-        else{
-            newNode->next=head;
-            head->prev=newNode;
-            head=newNode;
-        }
+//         if(head==NULL){
+//             head=tail=newNode;
+//             return;
+//         }
+//         else{
+//             newNode->next=head;
+//             head->prev=newNode;
+//             head=newNode;
+//         }
 
-    }
+//     }
 
-    void printDL(){
-        Node* temp=head;
-        if(head==NULL){
-            cout<<head;
-        }
-        else{
-            while(temp!=NULL){
-                cout<<temp->data<<" <=> ";;
-                temp=temp->next;
-            }
-            cout<<"NULL"<<endl;;
+//     void printDL(){
+//         Node* temp=head;
+//         if(head==NULL){
+//             cout<<head;
+//         }
+//         else{
+//             while(temp!=NULL){
+//                 cout<<temp->data<<" <=> ";;
+//                 temp=temp->next;
+//             }
+//             cout<<"NULL"<<endl;;
 
-        }
-    }
+//         }
+//     }
 
-    void push_back(int val){
-        Node* newNode= new Node(val);
-        Node* temp=head;
+//     void push_back(int val){
+//         Node* newNode= new Node(val);
+//         Node* temp=head;
 
-        if(head==NULL){
-            head=tail=newNode;
-        }
-        else{
-            while(temp->next!=NULL){
-                temp=temp->next;
-            }
-            temp->next=newNode;
-            newNode->prev=temp;
-            tail=newNode;
-
-
-        }
-    }
-
-    void pop_front(){
-        if(head==NULL){
-            cout<<"dl is empty";
-            return;
-        }
-        Node* temp=head;
-        head=head->next;
-        if(head!=NULL){
-        head->prev=NULL; // if head is NULL then its prev cant point to node
-        }
-        temp->next=NULL;
-        delete temp;
-    }
-
-    void pop_back(){
-        if(head==NULL){
-            cout<<"dl is empty";
-            return;
-        }
-        Node* temp=tail;
-        tail=tail->prev;
-        if(tail!=NULL){
-        tail->next=NULL;
-        }
-        temp->prev=NULL;
-        delete temp;
-    }
+//         if(head==NULL){
+//             head=tail=newNode;
+//         }
+//         else{
+//             while(temp->next!=NULL){
+//                 temp=temp->next;
+//             }
+//             temp->next=newNode;
+//             newNode->prev=temp;
+//             tail=newNode;
 
 
+//         }
+//     }
 
-};
+//     void pop_front(){
+//         if(head==NULL){
+//             cout<<"dl is empty";
+//             return;
+//         }
+//         Node* temp=head;
+//         head=head->next;
+//         if(head!=NULL){
+//         head->prev=NULL; // if head is NULL then its prev cant point to node
+//         }
+//         temp->next=NULL;
+//         delete temp;
+//     }
 
+//     void pop_back(){
+//         if(head==NULL){
+//             cout<<"dl is empty";
+//             return;
+//         }
+//         Node* temp=tail;
+//         tail=tail->prev;
+//         if(tail!=NULL){
+//         tail->next=NULL;
+//         }
+//         temp->prev=NULL;
+//         delete temp;
+//     }
+
+
+
+// };
+
+// int main(){
+//     DoublyList d1;
+//     d1.push_front(1);
+//     d1.push_front(12);
+//     d1.push_front(23);
+//     d1.printDL();
+//     d1.push_back(5);
+//     d1.push_back(10);
+//     d1.printDL();
+//     d1.pop_front();
+//     d1.printDL();
+//     d1.pop_back();
+//     d1.printDL();
+
+
+
+//     return 0;
+// }
+
+// video 65 finished
+
+
+
+// c++ stl striver and video 27 apna college 
+
+
+// #include <iostream> 
+// #include <vector>
+// using namespace std;
+// void vec_explain(){
+//     vector<int> v ;
+//     v.push_back(1);
+//     v.emplace_back(2);
+
+//     vector<pair<int,int>> vec;
+//     vec.push_back({1,2});
+//     vec.emplace_back(3,4);// push_back takes obj value , emplace_back constructs an obj
+
+//     vector<int> v1(5,20);
+//     vector<int> v2(v1);
+
+    
+
+// }
+
+
+// int main(){
+//     vec_explain();
+//     return 0;
+// }
+
+
+
+// #include <iostream> 
+// #include <vector>
+// using namespace std;
+// int main(){
+//     vector<int> vec={1,2,3,4,6};
+
+//     for(auto itr=vec.begin();itr!=vec.end();itr++){
+//         cout<<*(itr)<<" ";
+//     }
+//     cout<<endl;
+
+    
+//     for( auto it=vec.rbegin();it!=vec.rend();it++){
+//         cout<<*(it)<<" ";
+//     }
+//     cout<<endl;
+    
+    
+//     return 0;
+// }
+
+
+
+// #include <iostream> 
+// #include <vector>
+// using namespace std;
+// int main(){
+//     vector<int> vec(2,100); // {100,100}
+//     vec.insert(vec.begin(),30);  // {30,100,100}
+//     vec.insert(vec.begin()+1,2,45);//{30,45,45,100,100}
+
+//     vector<int> copy(3,70); // {70,70,70}
+//     vec.insert(vec.begin(),copy.begin(),copy.end());
+
+
+    
+//     for(auto it=vec.begin();it!=vec.end();it++){
+//         cout<<*(it)<<" ";
+//     }
+//     cout<<endl;
+    
+    
+//     return 0;
+// }
+
+
+
+
+// #include <iostream> 
+// #include <vector>
+// #include <list>
+
+
+// using namespace std;
+// int main(){
+//     list<int> l={1,2};
+//     l.push_back(1);
+//     l.push_back(2);
+//     l.push_front(3);
+//     l.push_front(5);
+//     l.pop_back();
+//     l.pop_front();
+
+//     for(int val : l){
+//         cout<<val<<" ";
+//     }
+//     cout<<endl;
+    
+//     return 0;
+// }
+
+
+
+// #include <iostream> 
+// #include <stack>
+// using namespace std;
+// int main(){
+//    stack<int> s;
+//    s.push(1);
+//    s.push(2);
+//    s.push(3);
+
+//    while(!s.empty()){
+//     cout<<s.top()<<endl;
+//     s.pop();
+//    }
+
+//    cout<<endl;
+  
+//    stack<int> s1;
+//    s1.push(7);
+//    s1.push(8);
+//    s1.push(9);
+
+//    stack<int> s2;
+//    s2.swap(s1);
+//    cout<<s1.size()<<endl;//0
+//    cout<<s2.size()<<endl;//3
+
+
+    
+//     return 0;
+// }
+
+
+
+// #include <iostream> 
+// #include <queue>
+// using namespace std;
+// int main(){
+//    queue<int> q;
+//    q.push(1);//{1}
+//    q.push(2);//{1,2}
+//    q.push(3);//{1,2,3}
+
+//    while(!q.empty()){
+//     cout<<q.front()<<endl;
+//     q.pop();
+//    }
+
+//    cout<<endl;
+  
+//    queue<int> q1;
+//    q1.push(7);
+//    q1.push(8);
+//    q1.push(9);
+
+//    queue<int> q2;
+//    q2.swap(q1);
+//    cout<<q1.size()<<endl;//0
+//    cout<<q2.size()<<endl;//3
+
+
+    
+//     return 0;
+// }
+
+
+
+// #include <iostream> 
+// #include <queue>
+
+// using namespace std;
+// int main(){
+
+//    priority_queue<int,vector<int>, greater<int>> q;
+//    q.push(5);//{5}
+//    q.push(3);//{3,5}
+//    q.push(10);//{3,5,10}
+//    q.push(4);//{3,4,5,10}
+
+//    while(!q.empty()){
+//     cout<<q.top()<<endl;
+//     q.pop();
+//    }
+//    cout<<endl;
+   
+//     return 0;
+// }
+
+
+// #include <iostream> 
+// #include <map>
+
+
+// using namespace std;
+// int main(){
+//     map<string,int> m;
+//     m["tv"]=20;
+//     m["laptop"]=70;
+//     m["phone"]=8;
+
+//     if(m.find("laptop") !=m.end()){
+//         cout<<"key exists"<<endl;
+//     }
+    
+//     auto it = m.find("phone");
+//     if(it!=m.end()){
+//         cout<<it->first<<endl;
+//         cout<<it->second<<endl;
+//     }
+//     return 0;
+// }
+
+
+
+
+// #include <iostream> 
+// #include <map>
+
+
+// using namespace std;
+// int main(){
+//     multimap<string,int> m;
+//     m.insert({"tv",100});
+//     m.emplace("tv",200);
+//     m.emplace("tv",100);
+//     m.insert({"tv",200});
+
+    
+//     for(auto p: m){
+//         cout<<p.first << " "<< p.second<< endl;
+//     }
+
+//     m.erase("tv");
+//     for(auto p: m){
+//         cout<<p.first << " "<< p.second<< endl;
+        
+//     }
+//     cout<<endl;
+//     m.insert({"tv",100});
+//     m.emplace("tv",200);
+//     m.emplace("tv",100);
+//     m.insert({"tv",200});
+//     m.erase(m.find("tv"));
+//     for(auto p: m){
+//         cout<<p.first << " "<< p.second<< endl;
+        
+//     }
+
+//     return 0;
+// }
+
+
+
+// #include <iostream> 
+// #include <unordered_map>
+
+
+// using namespace std;
+// int main(){
+//     unordered_map<string,int> m;
+//     m.insert({"tv",100});
+//     m.emplace("laptop",200);
+//     m.emplace("watch",100);
+//     m.insert({"computer",200});
+
+    
+//     for(auto p: m){
+//         cout<<p.first << " "<< p.second<< endl;
+//     }
+
+    
+
+//     return 0;
+// }
+
+
+// #include <iostream>
+// #include <set>
+// using namespace std;
+// int main(){
+//     set<int> s;
+//     s.insert(7);
+//     s.insert(1);
+//     s.insert(2);
+//     s.insert(3);
+
+//     s.insert(1);
+//     s.insert(2);
+//     s.insert(3);
+
+//     cout<<"size of set "<<s.size()<<endl;
+
+    
+
+//     for(auto val : s){
+//         cout<<val<<" ";
+//     }
+//     cout<<endl;
+
+//     return 0;
+// }
+
+
+// #include <iostream>
+// #include <vector>
+// #include <algorithm>
+// using namespace std;
+// int main(){
+//     int arr[5]={8,1,4,2,9};
+//     sort(arr,arr+5);
+//     for(auto val : arr){
+//         cout<<val<<" ";
+//     }
+//     cout<<endl;
+
+//     vector<int> vec={11,3,1,6,9};
+//     sort(vec.begin(),vec.end());
+//     for(auto val : vec){
+//         cout<< val<<" ";
+//     }
+//     cout<<endl;
+
+//     sort(vec.begin(),vec.end(),greater<int>());
+//     for(auto val : vec){
+//         cout<< val<<" ";
+//     }
+
+
+//     return 0;
+// }
+
+
+// #include <iostream>
+// #include <vector>
+// #include <algorithm>
+// using namespace std;
+// bool comp(pair<int,int> a, pair<int,int>b){
+//     if(a.second<b.second){
+//         return true;
+//     }
+//     if(a.second>b.second){
+//         return false;
+//     }
+//     else{
+//         if(a.first<b.first){
+//             return true;
+//         }
+//         else{
+//             return false;
+//         }
+//     }
+// }
+// int main(){
+
+    
+
+//     vector<pair<int,int>> vec1={{2,3},{4,2},{3,7},{5,10},{3,2}};
+//     sort(vec1.begin(),vec1.end(),comp);
+//     for(auto val : vec1){
+//         cout<< val.first<<" "<<val.second<<endl;
+//     }
+//     cout<<endl;
+
+
+   
+
+//     return 0;
+// }
+
+
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
 int main(){
-    DoublyList d1;
-    d1.push_front(1);
-    d1.push_front(12);
-    d1.push_front(23);
-    d1.printDL();
-    d1.push_back(5);
-    d1.push_back(10);
-    d1.printDL();
-    d1.pop_front();
-    d1.printDL();
-    d1.pop_back();
-    d1.printDL();
 
+    string s="123";
+    do{
+        cout<<s<<endl;
+    }
+    while(next_permutation(s.begin(),s.end()));
+    
 
 
     return 0;
