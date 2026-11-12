@@ -2737,19 +2737,159 @@
 // }
 
 
-#include <iostream>
-#include <vector>
-#include <algorithm>
-using namespace std;
-int main(){
+// #include <iostream>
+// #include <vector>
+// #include <algorithm>
+// using namespace std;
+// int main(){
 
-    string s="123";
-    do{
-        cout<<s<<endl;
-    }
-    while(next_permutation(s.begin(),s.end()));
+//     string s="123";
+//     do{
+//         cout<<s<<endl;
+//     }
+//     while(next_permutation(s.begin(),s.end()));
+
+//     int max_element=*max_element()
     
 
+
+//     return 0;
+// }
+
+
+           // HASHING 
+
+// #include <iostream>
+// using namespace std;
+// int main(){
+//     int n;
+//     cout<<"enter the size of array ";
+//     cin>>n;
+
+//     int number;
+
+//     int arr[n];
+//     cout<<"enter numbrs =";
+//     for(int i=0;i<n;i++){
+//         cin>>number;
+//         arr[i]=number;
+//     }
+
+//     int hash[13]={0};
+//     for(int i=0;i<n;i++){
+//         hash[arr[i]]+=1;
+//     }
+//     int num;
+
+//     int q;
+//     cout<<"enter number of queries i.e the number of numbers whose count is to be calculated";
+//     cin>>q;
+    
+//     while(q--){
+//         cin>>num;
+//         cout<<hash[num]<<endl;
+//     }
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main(){
+//     string s;
+//     cout<<"enter string";
+//     cin>>s;
+
+//     //precompute
+//     int hash[26]={0};
+//     for(int i=0;i<s.size();i++){
+//         hash[s[i]-'a'] +=1;
+//     }
+
+//     int q;
+//     cout<<"enter the number of queries";
+//     cin>>q;
+//     char ch;
+//     cout<<"enter the character whose frequency is to be calculated ";
+//     cin>>ch;
+//     while(q--){
+//         // fetch
+//         cout<< hash[ch-'a']<<endl;
+
+//     }
+
+//     return 0;
+// }
+
+
+
+// #include <iostream>
+// using namespace std;
+// int main(){
+//     string s;
+//     cout<<"enter string";
+//     cin>>s;
+
+//     //precompute
+//     int hash[256]={0};
+//     for(int i=0;i<s.size();i++){
+//         hash[s[i]] +=1;
+//     }
+
+//     int q;
+//     cout<<"enter the number of queries";
+//     cin>>q;
+//     char ch;
+   
+   
+//     while(q--){
+//         // fetch
+//         cout<<"enter the character whose frequency is to be calculated ";
+//         cin>>ch;
+//         cout<< hash[ch]<<endl;
+
+//     }
+
+//     return 0;
+// }
+
+
+#include <iostream>
+#include <unordered_map>
+
+using namespace std;
+
+int main() {
+    int n;
+    cout<<"enter size of array";
+    cin >> n;
+    
+    int arr[n];
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+
+    // Precompute frequencies
+    unordered_map<int, int> m;
+    for (int i = 0; i < n; i++) {
+        m[arr[i]]++;
+    }
+
+    // iterate in the map
+    for(auto it : m){
+        cout<<it.first<<"->"<<it.second<<endl;
+    }
+
+    int q;
+    cout << "Enter the number of queries: ";
+    cin >> q;
+    
+    while (q--) {
+        // Fetch frequency
+        cout << "Enter the number whose frequency is to be calculated: ";
+        int num;
+        cin >> num;
+        cout << m[num] << endl;
+    }
 
     return 0;
 }
